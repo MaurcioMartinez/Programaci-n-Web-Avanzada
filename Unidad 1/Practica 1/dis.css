@@ -1,0 +1,31 @@
+body {
+  margin: 20px;
+}
+header {
+  border: 4px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+#cuerpo {
+  display: flex;
+  margin: 20px;
+  padding: 20vh;
+  width: 80hv;
+  border: 2px solid green;
+}
+#im {
+  margin: 20px;
+}
+#botones {
+  margin: 20px;
+}
+
+#promocion {
+  align-items: center;
+  justify-content: space-around;
+}

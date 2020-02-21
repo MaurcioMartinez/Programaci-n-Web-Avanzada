@@ -1,0 +1,45 @@
+div{
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+}
+
+#redes{
+  position: relative;
+  left: -17%;
+}
+#copy{
+  position: relative;
+  left: 17%;
+}
+
+#logo{
+  position: relative;
+  left: -11.5%;
+}
+#links{
+  
+  position: relative;
+  left: 11.5%;
+}
+li {
+  list-style: none;
+}
+#texto{
+  width: 500px;
+}
+#cuerpo{
+  height: 400px;
+  margin-top: 3%;
+  background: rgb(146, 146, 125);
+  border: 4px solid black;
+}
+#pie{
+  margin-top: 3%;
+  background: burlywood;
+  border: 4px solid black;
+}
+#head{
+  background: rgb(88, 85, 68);
+  border: 4px solid black;
+}
