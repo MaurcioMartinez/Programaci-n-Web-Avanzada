@@ -1,0 +1,53 @@
+@font-face {
+  font-family: roboto_bold;
+  src: url("Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Tangerine_bold;
+  src: url("Tangerine_Bold.ttf");
+}
+@font-face {
+  font-family: Oswald_bold;
+  src: url("Oswald-Bold.ttf");
+}
+
+.demo-list-action {
+  width: 300px;
+}
+
+.titulo {
+  font-family: Tangerine_bold;
+  font-size: 50px;
+}
+.info,
+span {
+  font-family: roboto_bold;
+  font-size: 25px;
+}
+#estado {
+  font-family: Oswald_bold;
+  font-size: 25px;
+}
+.titu {
+  font-size: 30px;
+  color: #bd0707;
+}
+.lista {
+  text-align: left;
+  align-items: left;
+}
+
+.contenedor div {
+  padding: 1em;
+  text-align: center;
+}
+
+.demo-card-square.mdl-card {
+  background: #7e898b;
+  width: 30%;
+  height: 2000px;
+}
+.demo-card-square > .mdl-card__title {
+  color: rgb(132, 158, 168);
+  background: url("foto.jpg") top center no-repeat #46b6ac;
+}
