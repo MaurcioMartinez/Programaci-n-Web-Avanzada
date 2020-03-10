@@ -1,0 +1,41 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+    gap: 0.5em;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+    font-family: "Times New Roman", Times, serif;
+  }
+.contenedor > div{
+    background: rgb(102, 164, 206);
+    border: solid black;
+    text-align: center;
+}
+
+.titulo {
+    grid-column: 1/9;
+}
+.titulo > div{
+    align-items: center;
+}
+
+.menu,.slider,.carga{
+    grid-column: 2/5;
+}
+
+.ajax{
+    grid-column: 5/8;
+    grid-row: 2/3;
+}
+.efecto{
+    grid-column: 5/8;
+    grid-row: 3/4;
+}
+.otro{
+    grid-column: 5/8;
+    grid-row: 4/5;
+}
+.nombre{
+    grid-column: 1/9;
+    grid-row: 5/6;
+}
