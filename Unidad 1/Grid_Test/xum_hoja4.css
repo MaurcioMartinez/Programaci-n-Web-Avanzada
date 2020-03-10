@@ -241,7 +241,6 @@ article {
 
 .caja15 {
   grid-column: 2/3;
-  align-items: right;
   justify-content: right;
 }
 
