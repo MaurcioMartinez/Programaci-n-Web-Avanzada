@@ -1,0 +1,15 @@
+[
+    {
+        "fruta" : "Manzana",
+        "color": "Roja"
+    },
+    {
+        "fruta" : "Pera",
+        "color": "Verde"
+    },
+    {
+        "fruta" : "Fresa",
+        "color": "Rosa"
+    }
+
+]

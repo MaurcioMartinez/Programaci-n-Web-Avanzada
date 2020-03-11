@@ -16,18 +16,19 @@
       </div>
       <script>
         $(document).ready(function() {
-          $("#caja").keyup(function() {
-            var name = $("#caja").val();
-            $.post("frutas.php", { fruta: name }, function(data, status) {
-              console.log(data);
-              $("#test").html(data);
-            });
-          });
-        });
-        $(document).ready(function() {
           $(".boton").click(function() {
             $(".elements").toggle("slow", function() {});
           });
+
+          $(".boton").click(function() {
+            var ourRequest = new XMLHttpRequest();
+            ourRequest.open("GET",  'Nombres.json', true);
+            ourRequest.onload = function(){
+              var ourData = JSON.parse(ourRequest.responseText);
+              document.getElementById('test').insertAdjacentHTML('beforend','Testeo');
+            };
+    
+            });
         });
       </script>
       <div class="menu">
@@ -55,13 +56,10 @@
         Carga
       </div>
       <div class="ajax">
-        <input
-          id="caja"
-          type="text"
-          name="name"
-          placeholder="Nombres de Frutas"
-        />
-        <p id="test"></p>
+        <button class="boton">ANIMALES</button>
+        <p class="animales">
+          <script src="animales.js"></script>
+        </p>
       </div>
       <div class="efecto">
         efecto
