@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseño.css" >
-    <script lenguage = "JavaScript" src="jquery-3.4.1.min.js">
-       
-    </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="diseño.css" />
+    <script lenguage="JavaScript" src="jquery-3.4.1.min.js"></script>
     <title>Ejemplos Jquery</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contenedor">
-        <div class="titulo">
-            <div class="titu">
-                Ejemplos de Jquery
-            </div>
-            
+      <div class="titulo">
+        <div class="titu">
+          Ejemplos de Jquery
         </div>
-        
-        <div class="menu">
-            
-        </div>
-        <div class="slider">
-Slider
-        </div>
-        <div class="carga">
-Carga
-        </div>
-        <div class="ajax">
-Ajax
-        </div>
-        <div class="efecto">
-efecto
-        </div>
-        <div class="otro">
-            Otro
-        </div>
-        <div class="nombre">
-            Mauricio Antonio Martinez Martinez
-        </div>
-    </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+          $("#caja").keyup(function() {
+            var name = $("#caja").val();
+            $.post("frutas.php", { fruta: name }, function(data, status) {
+              console.log(data);
+              $("#test").html(data);
+            });
+          });
+        });
+        $(document).ready(function() {
+          $(".boton").click(function() {
+            $(".elements").toggle("slow", function() {});
+          });
+        });
+      </script>
+      <div class="menu">
+        <div class="mn">
+          <div class="elements">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
 
-    
-</body>
+          <button class="boton">
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider">
+        Slider
+      </div>
+      <div class="carga">
+        Carga
+      </div>
+      <div class="ajax">
+        <input
+          id="caja"
+          type="text"
+          name="name"
+          placeholder="Nombres de Frutas"
+        />
+        <p id="test"></p>
+      </div>
+      <div class="efecto">
+        efecto
+      </div>
+      <div class="otro">
+        Otro
+      </div>
+      <div class="nombre">
+        Mauricio Antonio Martinez Martinez
+      </div>
+    </div>
+  </body>
 </html>
