@@ -23,6 +23,7 @@
 .slider,
 .carga {
   grid-column: 2/5;
+  overflow: hidden;
 }
 
 .menu {
@@ -60,10 +61,17 @@ ul li a {
   border: none;
   outline: none;
 }
+.slid {
+  display: block;
+  list-style: none;
+}
 
 .ajax {
   grid-column: 5/8;
   grid-row: 2/3;
+}
+.ajua {
+  display: block;
 }
 .efecto {
   grid-column: 5/8;
@@ -76,4 +84,14 @@ ul li a {
 .nombre {
   grid-column: 1/9;
   grid-row: 5/6;
+}
+#clouds {
+  position: absolute;
+  z-index: 400;
+  right: 100px;
+  border: solid red 2px;
+}
+
+#clouds img {
+  width: 400px;
 }
